@@ -1,0 +1,169 @@
+@font-face{
+    font-family: 'outfit';
+    src: url('outfit.ttf');
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html{
+    font-size:18px;      
+}
+
+body{
+     min-height:100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family:outfit;
+    color: hsl(215, 51%, 70%);
+    background-color: hsl(217, 54%, 11%);
+}
+
+#mainwrapper{
+    border-radius: 20px;
+    background-color: hsl(216, 50%, 16%);
+    max-width: 350px;
+}
+
+header{
+    color:hsl(0, 0%, 100%);
+    font-weight: 600;
+    font-size: 1.2rem;
+    margin-top: 5px;
+}
+
+#imagewrapper{
+    text-align:center;
+    width: 302px;
+height: 302px;
+background-image: url("cube.jpg");
+background-size : cover;
+display: flex;
+align-items : center;
+justify-content : center;
+border-radius : 8px;
+margin-top: 1.5rem;
+margin-bottom: 1rem;
+margin-inline: auto;
+}
+
+#imagewrapper:hover{
+    cursor:pointer;
+    box-shadow:inset 0 0 0 1000px hsla(178, 100%, 50%, 0.5);
+}
+
+#imagewrapper:hover > #imag{
+    display: block;
+}
+#imag{
+    display:none;
+}
+
+#textt{
+    margin-left: 1.4rem;
+    line-height: 3rem;
+}
+p{
+    line-height: 1.5rem;  
+    font-weight:300;
+    margin-bottom: 8px;
+    margin-top: 2px;
+}
+
+span > img{
+    position: relative;
+    top: 0.5rem;
+    margin-bottom: 0.35rem;
+    margin-right: 0.1rem;
+} 
+
+ 
+ #diamin{
+    position: relative;
+    top: 0.5rem;
+    margin-bottom: 0.35rem;
+    margin-right: 0.4rem;
+} 
+
+#eth{
+    color:hsl(178, 100%, 50%);
+    margin-right: 4.5rem;
+}
+
+footer > span:hover , header:hover{
+    color:hsl(178, 100%, 50%);
+    cursor: pointer;
+}
+
+#clock{
+    margin-right: 4px;
+}
+
+#hre{
+    color:hsl(215, 32%, 27%);
+    margin-right: 25px;
+    min-height: 1px;
+    border: 3px;  
+    margin-top:12px;
+}
+footer > span{
+    color:hsl(0, 0%, 100%);
+}
+
+footer{
+    margin-bottom:12.5px;
+    margin-top: 5px;
+    font-size: 16px;
+}
+
+footer::before{
+display:inline-block;
+    content:"";
+    vertical-align: middle;
+    background: center/contain url("boy.png");
+    margin:.5ch;
+    height:33px;
+    width:33px;
+    aspect-ratio:1;
+    border-radius: 50%;
+    border: 1px solid white;
+    margin-right: 9px;
+    margin-bottom: 4px;
+}
+
+
+@media screen and (max-width: 320px){
+      #mainwrapper{
+    border-radius: 20px;
+    background-color: hsl(216, 50%, 16%);
+    max-width: 230px;
+}
+html{
+    font-size:16px;      
+}
+
+#imagewrapper{
+    text-align:center;
+    max-width: 190px;
+height: 190px;
+background-image: url("cube.jpg");
+background-size : cover;
+display: flex;
+align-items : center;
+justify-content : center;
+border-radius : 8px;
+margin-top: 1rem;
+margin-bottom: 0.5rem;
+margin-inline: auto;
+}
+#eth{
+    color:hsl(178, 100%, 50%);
+    margin-right: 0.2rem;
+}
+}
